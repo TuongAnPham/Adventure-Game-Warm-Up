@@ -1,0 +1,17 @@
+[[package]]
+category = "main"
+description = "Easy text adventures"
+name = "adventurelib"
+optional = false
+python-versions = ">=3"
+version = "1.2.1"
+
+[metadata]
+content-hash = "1e3ec23be850d4aa3300a7e5c1a5b55b967b3e99416666f5d88baf939ca65da6"
+python-versions = "^3.8"
+
+[metadata.files]
+adventurelib = [
+    {file = "adventurelib-1.2.1-py3-none-any.whl", hash = "sha256:aac1eba3ce841c13c5aa19c94916f6d75ebad9e5ebd5fb50524acd8733b8b432"},
+    {file = "adventurelib-1.2.1.tar.gz", hash = "sha256:8772d0d9085abf6d6bb0ddea0aa3d8f8228c1cc8a052ff68cd741af27cfdba8e"},
+]
