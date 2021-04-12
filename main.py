@@ -58,7 +58,19 @@ def win():
 
 @when("look around", context='room X')
 def look():
-    print("On the table, there is a red book, a green book, and a blue book. Open one of them, if you make the right choice, you'll win.")
+    print("On the table, there is a red book, a green book, and a white book. Open one of them, if you make the right choice, you'll win.")
+
+wrongthing = [
+  "red book",
+  "green book"
+]
+@when("open THING", context='room X')
+def open (thing):
+  if thing in wrongthing:
+    print("You lose. You'll be back in hallway with person 1.")
+    set_context('hallway')
+  else:
+    print("The white book is the correct answer! Since you take your key from person 2 'penguin,' remember the color of penguin? With that, this is the end of your journey, thanks for playing.")
 
 @when("exit room x", context='room X')
 def exit():
